@@ -1,0 +1,458 @@
+@charset "utf-8";
+body{
+    margin:0px;
+    padding: 0px;
+    background-color: #161616;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+ul{
+    list-style:none;
+}
+
+a{
+    text-decoration:none;
+}
+
+#main{
+    width:100%;
+    height: 100vh;
+    box-sizing:border-box;
+    background-color: #edf1fd;
+    position: relative;
+    background-image: url("../images/beauty.jpg");
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position: right center;
+}
+
+nav{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-transform:uppercase;
+    font-weight: 600;
+    letter-spacing:2px;
+    font-family: calibri;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 50px;
+    background-color: #f4f7ff;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.05);
+    z-index: 1;
+
+}
+.menu{
+    display: flex;
+
+}
+.menu li a {
+    padding: 10px 15px;
+    color:#6c707c;
+    font-size: 12px;
+
+}
+.lang {
+    color: #292929;
+    position: absolute;
+    right:100px;
+
+}
+.logo{
+    font-size:25px;
+    font-weight: bold;
+    color:#292929;
+    font-family: Poppins;
+    position: absolute;
+    left:100px;
+}
+
+.menu li a:hover,
+.active{
+    background-color: #292929;
+    color: #FFFFFF;
+    font-weight: 700px;
+    transition: all ease 0.4s;
+
+}
+
+.name{
+    font-family:calibri;
+    width:500px;
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    transform: translate(-20%, -50%);
+}
+
+.name p:nth-child(1)
+.name .details{
+    color:#6c707c;
+    font-size: 16px;
+}
+
+.name h1{
+    font-family: Poppins;
+    font-size: 40px;
+    margin: 0px;
+    letter-spacing:3px;
+    color:#292929;
+
+}
+.cv-btn{
+    width:200px;
+    height:45px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #292929;
+    color:#FFFFFF;
+}
+.cv-btn:hover {
+    background-color: #131313;
+    transition: all ease 0.5s;
+}
+.social{
+    position: absolute;
+    left:50px;
+    bottom:50px;
+    display: flex;
+}
+.social a {
+    margin:6px 12px;
+}
+.social i{
+    color:rgba(18,17,0.4);
+    font-size:14px;
+
+}
+.social a:hover i{
+    color:#17d1ac;
+    transition: all ease 0.5;
+}
+.arrow{
+    align-self: end;
+    width: 0%;
+    height:15%;
+    margin-bottom: 4em;
+    position: absolute;
+    bottom: 0px;
+    left:-3%;
+    border-right: 1px solid rgba(41,41,41,0.3);
+
+}
+
+.arrow::after{
+    content:'';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 11px 11px 0px 11px;
+    border-color: #292929 transparent transparent transparent;
+    right: -.7em;
+    bottom: -2px;
+}
+
+#about{
+    width: 100%;
+    height:100vh;
+    box-sizing:border-box;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 50px 5% 0px 5%;
+    
+    
+
+}
+
+.about-text{
+    font-family:calibri;
+    width:50%;  
+
+}
+.about-text h1{
+    font-size:5rem;
+    color:#17d1ac;
+}
+
+.about-text h2{
+    font-size:3rem;
+    color:#f4f7ff;
+    font-weight:400;
+
+}
+.about-text h1,h2{
+    margin:0px;
+    padding:0px;
+
+}
+
+.about-text p{
+    font-size:1.2rem;
+    color:rgba(251,251,251,0.90)
+}
+.about-text button{
+    width:100px;
+    height:40px;
+    border-radius:20px;
+    border:none;
+    outline:none;
+    background-color: #17d1ac;
+}
+.about-model{
+    border: 5px solid #17d1ac ;
+}
+#portfolio{
+    width:100%;
+    height:100vh;
+    font-family: calibri;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.s-heading h1{
+    color:#FFFFFF;
+    font-size:3rem;
+    margin:0px;
+    padding:0px;
+}
+.s-heading p{
+    color:rgba(249,249,249,0.30);
+    font-size:1rem;
+    margin:0px;
+    padding:0px;
+}
+
+.s-heading{
+    text-align:center;
+    margin:20px 0px;
+}
+
+.p-box{
+    background-color:#f1ebf0;
+    width:350px;
+    height:400px;
+    margin:20px;
+    border-radius:10px;
+    overflow: hidden;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.1);
+    position: relative;
+}
+ .p-b-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+
+.p-b-img{
+    widows: 100%;
+    height:70%
+}
+.p-b-img img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+ .p-b-text{
+    width:100%;
+    height:30%;
+    background-color:#e0d1d1;
+    justify-content:center;    
+}
+.p-b-text a {
+    margin:0px;
+    color:#0e0c0c;
+    font-size:1.1rem;
+    font-family:calibri;
+    display:block;
+    text-align: center;
+    display:-webkit-box;
+    -webkit-line-champ:4;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient:vertical
+}
+.p-type{
+    font-family:calibri;
+    color:black;
+    background-color: #e0d1d1;
+    padding:10px 15px;
+    position: absolute;
+    top:0px;
+    left:50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+}
+
+#contact-btn h1{
+    font-size:2rem;
+    color:#1e1e1e;
+    font-family: calibri;
+    margin:10px;
+    letter-spacing:4px;
+    
+}
+#contact-btn{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    height:200px;
+    background-color: #f4f7ff;
+    margin:20px 0px;
+    box-sizing: border-box;
+    box-shadow: 2px 0px 20px rgba(0,0,0,0.4);
+}
+#contact-btn a {
+    color:#FFFFFF;
+    font-size:1rem;
+    font-family: calibri;
+    width:150px;
+    height:40px;
+    margin:10px;
+    background-color: #1e1e1e;
+    box-shadow: 2px 5px 6px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+#contact-btn a:hover{
+    background-color: #17d1ac;
+    color:#000000;
+    transition: all ease 0.5s;
+    font-weight: 700;
+}
+
+#contact-form{
+    width: 100%;
+    height:90vh;
+    display:flex;
+    justify-content: center;
+    align-items:center;   
+}
+
+#contact-form form {
+    display:flex;
+    width: 70%;
+    height: 60vh;
+    background-color: #1a1a1a;
+    box-sizing: 2px 12px 20px rgba(0,0,0,0.2)
+
+}
+.contact-left{
+    width: 40%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+.contact-right{
+    width:60%;
+    height:100%;
+    display:flex;
+    box-sizing:border-box;
+    flex-direction: colum;
+    justify-content: space-between;
+    border-left: 1px solid rgba(255,255,255,0.08);
+}
+.c-heading{
+    font-family:calibri;
+    color:#FFFFFF;
+    font-size:3rem;
+    letter-spacing: 2px;
+    font-weight:400;
+}
+.f-email, .f-name{
+    display:flex;
+    flex-direction: column;
+    font-family: calibri;   
+}
+.f-email font,
+.f-name font{
+    color:#bfbfbf;
+    font-size:22px;
+}
+.f-email input,
+.f-name input{
+    height:30px;
+    width: 250px;
+    border:none;
+    outline:none;
+    background-color: transparent;
+    border-bottom: 1px solid #929292;
+    color:#FFFFFF;
+    margin:10px 0px;
+}
+.f-email input::placeholder,
+.f-name input::placeholder{
+    opacity:0.5px;
+    letter-spacing: 1px
+}
+
+.f-email input:focus,
+.f-name input:focus{
+    border-bottom: 1px solid #17d1ac;
+    transition: all ease 0.5s;
+}
+.message font{
+    font-size:18px;
+    font-family:calibri;
+    columns: #4e4e4e;
+    
+}
+.message{
+    margin:20px;
+    display:flex;
+    flex-direction: column;
+
+}
+.contact-right textarea{
+    width: 100%;
+    height: 320px;
+    border:none;
+    outline:none;
+    background-color: transparent;
+    box-sizing: border-box;
+    color:#ebebeb;
+    font-size:16px;
+
+}
+.contact-right textarea::placeholder{
+    color:#ebebeb;
+    font-size:18px;
+    letter-spacing:2px;
+    font-family:calibri;
+    
+    
+}
+.contact-right button{
+    width:500px;
+    height:50px;
+    background-color: #1ed98b;
+    font-weight: bold;
+    outline:none;
+    border:none;
+    margin:opx;
+    color:#1b1b1b;
+    font-size:14px;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    
+}

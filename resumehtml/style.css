@@ -1,0 +1,120 @@
+body{
+    margin:0px;
+    padding: 0px;
+    background-color: #585c68;
+    font-size: 14px;
+    line-height: 22px;
+    color:#555555;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+ul{
+    list-style:none;
+}
+
+.bold{
+    
+    font-size:20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.regular{
+    color:#af0c5e;
+    font-weight:bold;
+    font-size: 18px;
+}
+.resume{
+    width:800px;
+    height:auto;
+    display:flex;
+    margin:50px auto;
+}
+.left{
+    width: 280px;
+    background-color: #dce9ec;
+}
+.profile{
+    width: 100%;
+    height: 280px;
+}
+.profile img{
+    width: 100%;
+    height:90%
+}
+.content{
+    padding: 0 25px;
+}
+.title{
+    margin-bottom: 20px;
+}
+
+.skills{
+    padding:5px 0;
+    border-top: 2px solid #0a0d0e;
+}
+.resume .left ul li{
+    display:flex;
+    align-items:center;
+    margin-bottom: 10px;
+}
+.icons{
+    width:35px;
+    height:35px;
+    background-color: #fff;
+    color:#81154b;
+    border-radius: 50%;
+    margin-right:10px;
+    font-size:16px;
+    position:relative;
+
+}
+.icons i{
+   position: absolute;  
+   top:50%;
+   left:50%;
+   transform: translate(-50%, -50%);
+}
+.data{
+    color:#141718;
+}
+.skills ul li{
+    color:black;
+    justify-content: space-between;
+  
+
+}
+.right{
+    width: 520px;
+    background-color: #e7e7f1fa;
+    padding:25px;
+}
+.education ul{
+    padding-left:40px;
+    overflow:hidden;
+}
+.education ul li{
+    position: relative;  
+}
+.degree {
+    font-size:16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: black;
+}
+.bol{
+    text-transform: uppercase;
+    font-size:18px;
+    color:rgb(33, 31, 145);
+    font-weight:bold;
+}
+.moreinfo{
+    display:flex;
+    position: relative;
+    
+}
+.coursework{
+    font-style: italic;
+}
+
